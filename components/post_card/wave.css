@@ -1,0 +1,40 @@
+@keyframes move {
+	from {
+		transform: translate(0);
+	} 
+	to {
+		transform: translate(-316.5px);
+	}
+}
+
+.wave-box {
+	position: relative;
+	min-height: 200px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.wave-box__bg {
+	position: absolute;
+}
+
+
+.wave-box__item {
+	position: absolute;
+	width: 632px;
+	bottom: -25px;
+}
+
+.wave-box__item:nth-child(1) {
+	opacity: 1;
+	animation: move 8s linear  infinite;
+}
+
+.wave-box__item:nth-child(2) {
+	opacity: .7;
+	animation: move 5s linear infinite;
+}
+.wave-box__item:nth-child(3) {
+	opacity: .5;
+	animation: move 13s 2s linear infinite;
+}

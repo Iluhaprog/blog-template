@@ -1,0 +1,49 @@
+@import './../../main.css';
+
+.post-card {
+	min-height: 400px;
+	width: 300px;
+	box-shadow: 0 0 20px var(--shadow);
+	font-family: var(--main-font);
+}
+
+.post-description {
+	width: 100%;
+	padding: 15px;
+}
+
+.post-description__title {
+	font-size: 26px;
+	font-weight: 400;
+	color: var(--card-title);
+	margin: 0;
+}
+
+.post-description__text {
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+	font-size: 14px;
+	color: var(--card-description);
+}
+
+.tag {
+	font-size: 13px;
+	font-weight: 400;
+	padding: 5px;
+	margin: 0 5px 0 0;
+	background-color: var(--card-tag);
+	border-radius: 5px;
+	color: var(--text-color-1);
+}
+
+.post-card__bottom {
+	margin-top: 10px;
+}
+
+.post-card__bottom .date {
+	font-size: 10px;
+	color: var(--card-date);
+}
