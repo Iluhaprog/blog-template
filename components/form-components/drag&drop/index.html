@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Drag&Drop</title>
+	<link rel="stylesheet" href="drag_and_drop.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="column column_ai-c column_jc-c">
+			<div class="drag-and-drop">
+				<div class="drag-and-drop__box" id="dad"></div>
+			</div>
+		</div>
+	</div>
+	<script src="index.js"></script>
+	<script>
+		addDragAndDrop({
+			id: 'dad',
+			dragover: (event, element) => addClass(element, 'drag'),
+			dragleave: (event, element) => removeClass(element, 'drag'),
+			drop: (event, element) => {
+				getFileInfo(event);
+				removeClass(element, 'drag');
+			},
+		});
+	</script>	
+</body>
+</html>
