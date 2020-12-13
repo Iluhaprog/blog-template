@@ -1,0 +1,1 @@
+Tamplate of blog
