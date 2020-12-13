@@ -40,34 +40,34 @@
 	box-shadow: 0 0 20px var(--shadow);
 }
 
-.preloader:after {
-	content: url('./imgs/wave.svg');
-	position: absolute;
-	top: -2px;
-	left: calc(50% - 95px);
-}
-
+.preloader:after,
 .preloader:before {
 	content: url('./imgs/wave.svg');
 	position: absolute;
+	left: calc(50% - 95px);
+}
+
+.preloader:after {
+	top: -2px;
+}
+
+.preloader:before {
 	bottom: -2px;
 	transform: rotate(180deg);
-	left: calc(50% - 95px);
 }
 
 .preloader-box h1, 
 .preloader-box p {
+	font-weight: 300;
 	text-align: center;
 	margin: 0;
 }
 
 .preloader-box h1 {
 	font-size: 48px;
-	font-weight: 300;
 }
 
 .preloader-box p {
-	font-style: 18px;
-	font-weight: 300;
+	font-size: 18px;
 	color: var(--main-color-1);
 }
