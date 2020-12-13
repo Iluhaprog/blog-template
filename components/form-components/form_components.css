@@ -1,0 +1,57 @@
+@import '../../main.css';
+
+.input-box {
+	display: flex;
+	font-family: var(--main-font);
+	color: var(--label);
+	box-shadow: 0 5px 10px var(--shadow);
+	margin-bottom: 15px;
+}
+
+.input-box input {
+	min-width: 250px;
+	padding: 16px;
+	border-radius: 0 5px 5px 0;
+	font-size: 16px;
+	border: 1px solid var(--input-border);
+	outline: none;
+	color: var(--label);
+	transition: .3s ease;
+}
+
+.input-box label {
+	border-top: 1px solid var(--input-border);
+	border-left: 1px solid var(--input-border);
+	border-bottom: 1px solid var(--input-border);
+	padding: 15px;
+	border-radius: 5px 0 0 5px;
+}
+
+.input-box input:focus + .input-box label {
+	color: var(--main-color-1);
+}
+
+
+
+.textarea {
+	min-height: 130px;
+	border-radius: 5px;
+	resize: none;
+	outline: none;
+	font-size: 16px;
+	padding: 15px;
+	border: 1px solid var(--input-border);
+	box-shadow: 0 5px 10px var(--shadow);
+	color: var(--label);
+	transition: .3s ease;
+
+}
+
+.textarea::placeholder {
+	color: var(--label);
+}
+
+
+.input-box input:focus, .textarea:focus {
+	color: var(--main-color-1);
+}
