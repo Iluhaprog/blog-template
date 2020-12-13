@@ -16,7 +16,7 @@
 
 .preloader-box {
 	position: relative;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--main-font);
 }
 
 .preloader-text {
