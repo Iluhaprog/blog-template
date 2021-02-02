@@ -7,6 +7,15 @@
 	}
 }
 
+@keyframes move2 {
+	from {
+		transform: translate(-316.5px);
+	} 
+	to {
+		transform: translate(0);
+	}
+}
+
 .wave-box {
 	position: relative;
 	min-height: 200px;
@@ -27,14 +36,15 @@
 
 .wave-box__item:nth-child(1) {
 	opacity: 1;
+	bottom: -35px;
 	animation: move 8s linear  infinite;
 }
 
 .wave-box__item:nth-child(2) {
 	opacity: .7;
-	animation: move 5s linear infinite;
+	animation: move2 5s linear infinite;
 }
 .wave-box__item:nth-child(3) {
 	opacity: .5;
-	animation: move 13s 2s linear infinite;
+	animation: move 10s 1s linear infinite;
 }
