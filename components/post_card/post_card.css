@@ -5,6 +5,11 @@
 	width: 300px;
 	box-shadow: 0 0 20px var(--shadow);
 	font-family: var(--main-font);
+	transition: .3s ease-in-out;
+}
+
+.post-card:hover {
+	box-shadow: 0 10px 30px var(--shadow);
 }
 
 .post-description {
